@@ -3,13 +3,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-//lev18:
-
-//Придумать механизм шифровки/дешифровки.
-
-//Программа запускается с одним из следующих наборов параметров:
-//-e fileName fileOutputName
-//-d fileName fileOutputName
+/*
+lev18:
+РџСЂРёРґСѓРјР°С‚СЊ РјРµС…Р°РЅРёР·Рј С€РёС„СЂРѕРІРєРё/РґРµС€РёС„СЂРѕРІРєРё.
+РџСЂРѕРіСЂР°РјРјР° Р·Р°РїСѓСЃРєР°РµС‚СЃСЏ СЃ РѕРґРЅРёРј РёР· СЃР»РµРґСѓСЋС‰РёС… РЅР°Р±РѕСЂРѕРІ РїР°СЂР°РјРµС‚СЂРѕРІ:
+-e fileName fileOutputName
+-d fileName fileOutputName
+*/
 
 public class Solution26 {
     public static void main(String[] args) throws IOException {
