@@ -3,11 +3,13 @@ package Solution14;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-//lev18
-//Измени класс TxtInputStream так, чтобы он работал только с txt-файлами (*.txt).
-//Например, first.txt или name.1.part3.txt.
-//Если передан не txt-файл, например, file.txt.exe, то конструктор должен выбрасывать исключение UnsupportedFileNameException.
-//Подумай, что еще нужно сделать, в случае выброшенного исключения.
+/*
+lev18
+РР·РјРµРЅРё РєР»Р°СЃСЃ TxtInputStream С‚Р°Рє, С‡С‚РѕР±С‹ РѕРЅ СЂР°Р±РѕС‚Р°Р» С‚РѕР»СЊРєРѕ СЃ txt-С„Р°Р№Р»Р°РјРё (*.txt).
+РќР°РїСЂРёРјРµСЂ, first.txt РёР»Рё name.1.part3.txt.
+Р•СЃР»Рё РїРµСЂРµРґР°РЅ РЅРµ txt-С„Р°Р№Р», РЅР°РїСЂРёРјРµСЂ, file.txt.exe, С‚Рѕ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РґРѕР»Р¶РµРЅ РІС‹Р±СЂР°СЃС‹РІР°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ UnsupportedFileNameException.
+РџРѕРґСѓРјР°Р№, С‡С‚Рѕ РµС‰Рµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, РІ СЃР»СѓС‡Р°Рµ РІС‹Р±СЂРѕС€РµРЅРЅРѕРіРѕ РёСЃРєР»СЋС‡РµРЅРёСЏ.
+*/
 
 public class TxtInputStream extends FileInputStream {
 
