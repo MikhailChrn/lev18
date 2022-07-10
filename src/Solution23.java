@@ -6,13 +6,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ArrayList;
 
-//lev18:
-//
-//Читайте с консоли имена файлов, пока не будет введено слово "exit".
-//Передайте имя файла в нить ReadThread.
-//Нить ReadThread должна найти байт, который встречается в файле максимальное число раз, и добавить его в словарь resultMap,
-//где параметр String - это имя файла, параметр Integer - это искомый байт.
-//Закрыть потоки.
+/*
+lev18:
+Р§РёС‚Р°Р№С‚Рµ СЃ РєРѕРЅСЃРѕР»Рё РёРјРµРЅР° С„Р°Р№Р»РѕРІ, РїРѕРєР° РЅРµ Р±СѓРґРµС‚ РІРІРµРґРµРЅРѕ СЃР»РѕРІРѕ "exit".
+РџРµСЂРµРґР°Р№С‚Рµ РёРјСЏ С„Р°Р№Р»Р° РІ РЅРёС‚СЊ ReadThread.
+РќРёС‚СЊ ReadThread РґРѕР»Р¶РЅР° РЅР°Р№С‚Рё Р±Р°Р№С‚, РєРѕС‚РѕСЂС‹Р№ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РІ С„Р°Р№Р»Рµ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ СЂР°Р·, Рё РґРѕР±Р°РІРёС‚СЊ РµРіРѕ РІ СЃР»РѕРІР°СЂСЊ resultMap,
+РіРґРµ РїР°СЂР°РјРµС‚СЂ String - СЌС‚Рѕ РёРјСЏ С„Р°Р№Р»Р°, РїР°СЂР°РјРµС‚СЂ Integer - СЌС‚Рѕ РёСЃРєРѕРјС‹Р№ Р±Р°Р№С‚.
+Р—Р°РєСЂС‹С‚СЊ РїРѕС‚РѕРєРё.
+*/
 
 public class Solution23 {
     public static Map<String, Integer> resultMap = new HashMap<String, Integer>();;
@@ -44,7 +45,7 @@ public class Solution23 {
             this.fileName = fileName;
         }
 
-        // implement file reading here - реализуйте чтение из файла тут
+        // implement file reading here - Г°ГҐГ Г«ГЁГ§ГіГ©ГІГҐ Г·ГІГҐГ­ГЁГҐ ГЁГ§ ГґГ Г©Г«Г  ГІГіГІ
         public void run() {
             try {
                 FileInputStream inputStream = new FileInputStream(fileName);
