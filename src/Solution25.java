@@ -2,12 +2,14 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-//lev18:
-//Собираем файл из кусочков.
-//Считывать с консоли имена файлов.
-//Каждый файл имеет имя: [someName].partN.
-//
-//Например, Lion.avi.part1, Lion.avi.part2, ..., Lion.avi.part37.
+/*
+lev18:
+РЎРѕР±РёСЂР°РµРј С„Р°Р№Р» РёР· РєСѓСЃРѕС‡РєРѕРІ.
+РЎС‡РёС‚С‹РІР°С‚СЊ СЃ РєРѕРЅСЃРѕР»Рё РёРјРµРЅР° С„Р°Р№Р»РѕРІ.
+РљР°Р¶РґС‹Р№ С„Р°Р№Р» РёРјРµРµС‚ РёРјСЏ: [someName].partN.
+
+РќР°РїСЂРёРјРµСЂ, Lion.avi.part1, Lion.avi.part2, ..., Lion.avi.part37.
+*/
 
 public class Solution25 {
     public static void main(String[] args) throws IOException {
@@ -22,7 +24,7 @@ public class Solution25 {
         Collections.sort(inputFilesList);
 
         String outputFileName = inputFilesList.get(0).substring(0, inputFilesList.get(0).lastIndexOf("."));
-        FileOutputStream outputStream = new FileOutputStream(outputFileName); //Нужен буфер!!
+        FileOutputStream outputStream = new FileOutputStream(outputFileName); //ГЌГіГ¦ГҐГ­ ГЎГіГґГҐГ°!!
 
         for (String inp : inputFilesList) {
             try {
