@@ -32,5 +32,5 @@ public class Solution26 {
         inputStream.close();
         outputStream.close();
     }//end void main
-
 }
+

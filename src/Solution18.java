@@ -35,3 +35,4 @@ public class Solution18 {
         outputStream1.close();
     }// end void main
 }
+
