@@ -4,12 +4,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-//lev18:
-//1 Измени класс AmigoOutputStream так, чтобы он стал Wrapper-ом для класса FileOutputStream. Используй наследование.
-//2 При вызове метода close() должны выполняться следующая последовательность действий:
-//2.1 Вызвать метод flush().
-//2.2 Записать в конец файла фразу "JavaRush © All rights reserved.", используй метод getBytes().
-//2.3 Закрыть поток методом close().
+/*
+lev18:
+1 РР·РјРµРЅРё РєР»Р°СЃСЃ AmigoOutputStream С‚Р°Рє, С‡С‚РѕР±С‹ РѕРЅ СЃС‚Р°Р» Wrapper-РѕРј РґР»СЏ РєР»Р°СЃСЃР° FileOutputStream. РСЃРїРѕР»СЊР·СѓР№ РЅР°СЃР»РµРґРѕРІР°РЅРёРµ.
+2 РџСЂРё РІС‹Р·РѕРІРµ РјРµС‚РѕРґР° close() РґРѕР»Р¶РЅС‹ РІС‹РїРѕР»РЅСЏС‚СЊСЃСЏ СЃР»РµРґСѓСЋС‰Р°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ РґРµР№СЃС‚РІРёР№:
+2.1 Р’С‹Р·РІР°С‚СЊ РјРµС‚РѕРґ flush().
+2.2 Р—Р°РїРёСЃР°С‚СЊ РІ РєРѕРЅРµС† С„Р°Р№Р»Р° С„СЂР°Р·Сѓ "JavaRush В© All rights reserved.", РёСЃРїРѕР»СЊР·СѓР№ РјРµС‚РѕРґ getBytes().
+2.3 Р—Р°РєСЂС‹С‚СЊ РїРѕС‚РѕРє РјРµС‚РѕРґРѕРј close().
+*/
 
 public class AmigoOutputStream extends FileOutputStream {
     public static String fileName = "C:/tmp/result.txt";
@@ -38,7 +40,7 @@ public class AmigoOutputStream extends FileOutputStream {
 
     @Override
     public void close() throws IOException {
-        String str = "JavaRush © All rights reserved.";
+        String str = "JavaRush В© All rights reserved.";
         component.flush();
         component.write(str.getBytes());
         component.close();
