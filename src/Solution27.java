@@ -3,10 +3,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 //lev18:
+
 //CRUD дл€ таблицы внутри файла.
 //Ќапиши программу, котора€ считывает с консоли путь к файлу дл€ операций CRUD и при запуске со следующим набором параметров:
 //-c productName price quantity
-//добавл€ет товар с заданными параметрами с новой строки в конец файла, генериру€ id (8 символов) самосто€тельно путем инкремента максимального id, найденного в файле.
+//добавл€ет товар с заданными параметрами с новой строки в конец файла,
+//генериру€ id (8 символов) самосто€тельно путем инкремента максимального id, найденного в файле.
 
 public class Solution27 {
     public static void main(String[] args) throws Exception {
@@ -53,4 +55,3 @@ public class Solution27 {
         }//end int findMaxID
     }//end class IdReader
 }
-

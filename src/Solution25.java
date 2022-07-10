@@ -6,6 +6,8 @@ import java.util.Collections;
 //Собираем файл из кусочков.
 //Считывать с консоли имена файлов.
 //Каждый файл имеет имя: [someName].partN.
+//
+//Например, Lion.avi.part1, Lion.avi.part2, ..., Lion.avi.part37.
 
 public class Solution25 {
     public static void main(String[] args) throws IOException {

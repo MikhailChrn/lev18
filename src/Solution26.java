@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 //lev18:
+
 //Придумать механизм шифровки/дешифровки.
 
 //Программа запускается с одним из следующих наборов параметров:
@@ -33,4 +34,3 @@ public class Solution26 {
         outputStream.close();
     }//end void main
 }
-

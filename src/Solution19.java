@@ -26,4 +26,3 @@ public class Solution19 {
         outputStream1.close();
     }
 }
-

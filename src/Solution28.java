@@ -2,11 +2,16 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Solution28 {
+
     //lev18:
+    //
     //CRUD для таблицы внутри файла.
     //Напиши программу, которая считывает с консоли путь к файлу для операций CRUD и при запуске в зависимости от флага,
     //переданного в параметрах обновляет данные товара с заданным id или производит физическое удаление товара с заданным id
-    //(удаляет из файла все данные, которые относятся к переданному id).
+    // (удаляет из файла все данные, которые относятся к переданному id).
+    //-u id productName price quantity
+    //-d id
+
     public static void main(String[] args) throws Exception {
         if (args.length != 2 & args.length != 5) {
             System.out.println("Try again!");
@@ -53,4 +58,3 @@ public class Solution28 {
         fileLineWriter.close();
     }// end void main
 }
-
