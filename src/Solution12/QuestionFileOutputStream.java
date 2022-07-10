@@ -5,15 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
-lev18:Расширяем AmigoOutputStream
-Используя шаблон проектирования Wrapper (Decorator) расширь функциональность AmigoOutputStream.
-В классе QuestionFileOutputStream при вызове метода close() должна быть реализована следующая функциональность:
-1. Вывести в консоль фразу "Вы действительно хотите закрыть поток? Д/Н".
-2. Считай строку.
-3. Если считанная строка равна "Д", то закрыть поток.
-4. Если считанная строка не равна "Д", то не закрывать поток.
-
-
+lev18:
+РСЃРїРѕР»СЊР·СѓСЏ С€Р°Р±Р»РѕРЅ РїСЂРѕРµРєС‚РёСЂРѕРІР°РЅРёСЏ Wrapper (Decorator) СЂР°СЃС€РёСЂСЊ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕСЃС‚СЊ AmigoOutputStream.
+Р’ РєР»Р°СЃСЃРµ QuestionFileOutputStream РїСЂРё РІС‹Р·РѕРІРµ РјРµС‚РѕРґР° close() РґРѕР»Р¶РЅР° Р±С‹С‚СЊ СЂРµР°Р»РёР·РѕРІР°РЅР° СЃР»РµРґСѓСЋС‰Р°СЏ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕСЃС‚СЊ:
+1. Р’С‹РІРµСЃС‚Рё РІ РєРѕРЅСЃРѕР»СЊ С„СЂР°Р·Сѓ "Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ Р·Р°РєСЂС‹С‚СЊ РїРѕС‚РѕРє? Р”/Рќ".
+2. РЎС‡РёС‚Р°Р№ СЃС‚СЂРѕРєСѓ.
+3. Р•СЃР»Рё СЃС‡РёС‚Р°РЅРЅР°СЏ СЃС‚СЂРѕРєР° СЂР°РІРЅР° "Р”", С‚Рѕ Р·Р°РєСЂС‹С‚СЊ РїРѕС‚РѕРє.
+4. Р•СЃР»Рё СЃС‡РёС‚Р°РЅРЅР°СЏ СЃС‚СЂРѕРєР° РЅРµ СЂР°РІРЅР° "Р”", С‚Рѕ РЅРµ Р·Р°РєСЂС‹РІР°С‚СЊ РїРѕС‚РѕРє.
 */
 
 public class QuestionFileOutputStream implements AmigoOutputStream {
@@ -42,12 +40,11 @@ public class QuestionFileOutputStream implements AmigoOutputStream {
     public void write(byte[] b, int off, int len) throws IOException {
         component.write(b, off, len);
     }
-
     @Override
     public void close() throws IOException {
-        System.out.println("Вы действительно хотите закрыть поток? Д/Н");
+        System.out.println("Г‚Г» Г¤ГҐГ©Г±ГІГўГЁГІГҐГ«ГјГ­Г® ГµГ®ГІГЁГІГҐ Г§Г ГЄГ°Г»ГІГј ГЇГ®ГІГ®ГЄ? Г„/ГЌ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        if ("Д".equals(reader.readLine())) component.close();
+        if ("Г„".equals(reader.readLine())) component.close();
         reader.close();
     }
 }
