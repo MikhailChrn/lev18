@@ -1,7 +1,8 @@
 /* 
 lev18:Wrapper (Decorator)
-Аналогично классу DecoratorRunnableImpl создай класс DecoratorMyRunnableImpl.
-Вывод в консоль должен быть таким:
+Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°.
+РђРЅР°Р»РѕРіРёС‡РЅРѕ РєР»Р°СЃСЃСѓ DecoratorRunnableImpl СЃРѕР·РґР°Р№ РєР»Р°СЃСЃ DecoratorMyRunnableImpl.
+Р’С‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ С‚Р°РєРёРј:
 DecoratorRunnableImpl body
 DecoratorMyRunnableImpl body
 RunnableImpl body
